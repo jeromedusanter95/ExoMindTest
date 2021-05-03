@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ExoMindTest</string>
+    <string name="splash_title">Bienvenue sur ce test technique</string>
+    <string name="splash_subtitle">Par Jérôme Dusanter</string>
+    <string name="splash_button_text">Suivant</string>
+    <string name="temperature_in_celsius">Temperature : %1$s°C</string>
+    <string name="cloudiness_in_percent">Couverture nuageuse : %1$s</string>
+    <string name="city_list_loading_title_1">Nous téléchargeons les données…</string>
+    <string name="city_list_loading_title_2">C’est presque fini…</string>
+    <string name="city_list_loading_title_3">Plus que quelques secondes avant d’avoir le résultat…</string>
+    <string name="city_list_button_text">Recommencer</string>
+    <string name="number_in_percent">%1$d&#65130;</string>
+</resources>

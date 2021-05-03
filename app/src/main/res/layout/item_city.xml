@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.jeromedusanter.exomindtest.ui.features.city.list.CityListItemViewModel" />
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/unit_1"
+        android:layout_marginTop="@dimen/unit_1"
+        android:layout_marginEnd="@dimen/unit_1"
+        android:layout_marginBottom="@dimen/unit_2"
+        app:cardCornerRadius="@dimen/unit_1"
+        app:cardElevation="@dimen/unit_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/unit_2">
+
+            <TextView
+                style="@style/AppTheme.Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.name}"
+                tools:text="Rennes" />
+
+            <TextView
+                style="@style/AppTheme.Text.Content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unit_1"
+                android:text="@{viewModel.temperature}"
+                tools:text="13°c" />
+
+            <TextView
+                style="@style/AppTheme.Text.Content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unit_1"
+                android:text="@{viewModel.cloudiness}"
+                tools:text="1%" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
